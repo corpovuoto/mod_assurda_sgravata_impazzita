@@ -1,0 +1,21 @@
+name: Sussybaka
+version: '${project.version}'
+main: coordshud_bella.sussybaka.Sussybaka
+api-version: 1.19
+
+commands:
+  coordinates:
+    description: Displays the list of commands and their functions
+    aliases:
+      - chud
+      - coords
+      - coordinateshud
+    usage: /coordinates toggle
+    permission: coordinateshud.toggle
+    permission-message: You do not have the coordinateshud.toggle permission.
+permissions:
+  coordinateshud.toggle:
+    description: Allows for /coordinates toggle command
+    default: true
+
+
